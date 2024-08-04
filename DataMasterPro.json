@@ -1,0 +1,26 @@
+{
+  "db_path": "example.db",
+  "table_name": "your_table",
+  "custom_query": "SELECT * FROM your_table WHERE updated_at >= '2024-01-01'",
+  "excel_file": "example.xlsx",
+  "sheet_name": "Sheet1",
+  "encryption_key": "your_encryption_key_here",
+  "email": {
+    "from_email": "your_email@example.com",
+    "from_password": "your_password",
+    "smtp_server": "smtp.example.com",
+    "smtp_port": 587,
+    "to_email": "notification@example.com"
+  },
+  "ml": {
+    "predict_column": "sales",
+    "anomaly_threshold": 3.0,
+    "cluster_columns": ["feature1", "feature2"],
+    "feature_columns": ["feature1", "feature2", "feature3"],
+    "tune_hyperparameters": true,
+    "use_automl": true,
+    "time_series_columns": ["date", "sales"],
+    "text_column": "review",
+    "image_column": "image_path"
+  }
+}
